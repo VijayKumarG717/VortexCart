@@ -4,8 +4,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/VortexCart',
-  assetPrefix: '/VortexCart/',
+  basePath: process.env.NODE_ENV === 'production' ? '/VortexCart' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/VortexCart/' : '',
+  trailingSlash: true,
 };
 
 module.exports = nextConfig; 
