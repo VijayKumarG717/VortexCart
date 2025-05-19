@@ -5,8 +5,8 @@ const nextConfig = {
     unoptimized: true,
     domains: ['fakestoreapi.com', 'images.unsplash.com'],
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/VortexCart' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/VortexCart/' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/VijayMart' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/VijayMart/' : '',
 };
 
 module.exports = nextConfig; 
