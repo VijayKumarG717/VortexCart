@@ -21,7 +21,7 @@ jobs:
       - name: Install Dependencies
         run: |
           npm install
-          npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+          npm install -D tailwindcss@3.4.1 postcss@8.4.33 autoprefixer@10.4.17
 
       - name: Build
         run: npm run build
