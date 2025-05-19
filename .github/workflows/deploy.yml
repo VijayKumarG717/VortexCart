@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -24,7 +27,8 @@ jobs:
           npm install -D tailwindcss@3.4.1 postcss@8.4.33 autoprefixer@10.4.17
 
       - name: Build
-        run: npm run build
+        run: |
+          npm run build
         env:
           NODE_ENV: production
           NEXT_PUBLIC_BASE_PATH: /VortexCart
@@ -34,4 +38,5 @@ jobs:
         with:
           folder: out
           branch: gh-pages
-          clean: true 
+          clean: true
+          single-commit: true 

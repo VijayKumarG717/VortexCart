@@ -7,6 +7,7 @@ const nextConfig = {
   basePath: process.env.NODE_ENV === 'production' ? '/VortexCart' : '',
   assetPrefix: process.env.NODE_ENV === 'production' ? '/VortexCart/' : '',
   trailingSlash: true,
+  distDir: 'out',
 };
 
 module.exports = nextConfig; 
