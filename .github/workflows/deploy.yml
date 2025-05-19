@@ -19,7 +19,9 @@ jobs:
           cache: 'npm'
 
       - name: Install Dependencies
-        run: npm install
+        run: |
+          npm install
+          npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
 
       - name: Build
         run: npm run build
