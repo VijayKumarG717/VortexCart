@@ -25,6 +25,8 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: /VortexCart
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
